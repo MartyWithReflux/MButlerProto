@@ -1,0 +1,325 @@
+/*
+Theme Name: Boostrap Starter Theme
+Theme URI: https://www.lyrathemes.com/bootstrap-wordpress-theme-tutorial/
+Author: Abby
+Author URI: https://www.lyrathemes.com
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: bootstrapstarter
+*/
+
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+.homes-footer-nav {
+  list-style: none;
+  flex-wrap: nowrap;
+  color: #FFFFFF;
+  font-weight: 800;
+  margin: auto 0;
+}
+
+.homes-footer {
+  background-color: #50ABDA;
+  height: 5rem;
+  position: relative;
+}
+
+.copyright-text {
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  margin: auto 0;
+}
+
+.homes-footer-div {
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.section-header {
+  /*background-image: url("http://localhost/wordpress/wp-content/uploads/2020/06/home.png");*/
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://i.imgur.com/muGkr5X.jpg);
+  background-size: 100% auto;
+  background-position: center bottom;
+  height: 50rem;
+  position: relative;
+}
+
+.homes-logo {
+  top: 50%;
+  left: 50%;
+  transform: scale(.90) translate(-60%, -50%);
+  background-image: url("https://i.imgur.com/sSH3kOX.png");
+  position: absolute;
+  height: 10rem;
+  width: 44rem;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+our-services {
+
+
+}
+
+.carousel-control-prev {
+  left: -30rem;
+}
+
+.carousel-control-next {
+  right: -30rem;
+}
+
+.carousel-background {
+  background-color: #50ABDA;
+}
+
+.section-house-img{
+  background-image: url("https://cdn.discordapp.com/attachments/680599042312634518/721096381762371705/103.jpeg");
+  height: 80rem;
+  background-position: 50% 40%;
+  background-size: cover;
+}
+
+.section-house-img-2{
+  height: auto;
+}
+
+.collage-image{
+  height: 100%;
+  width:  100%;
+}
+
+.home-page-img {
+  display:block;
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+.menu-slash {
+  z-index: 2;
+}
+
+/* Nav links */
+.blog-nav-item {
+  font-family: Calibri, serif;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.header-image {
+  margin-top: -50px;
+  filter: brightness(50%);
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.nav-position {
+  font-size: 2rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+  .section-header {
+    background-size: 125% auto;
+    height: 40rem;
+  }
+
+  .nav-position {
+    font-size: 1.8rem;
+    top: 20%;
+  }
+
+  .homes-logo {
+    transform: scale(.75) translate(-70.5%, -62.5%);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .section-header {
+    background-size: 150% auto;
+    height: 30rem;
+  }
+  .nav-position {
+    font-size: 1.7rem;
+    top: 15%;
+  }
+  .homes-logo {
+    transform: scale(.65) translate(-80.5%, -65.5%);
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .section-header {
+    background-size: 175% auto;
+    height: 20rem;
+  }
+  .nav-position {
+    font-size: 1.5rem;
+    top: 15%;
+  }
+  .homes-logo {
+    transform: scale(.55) translate(-95.5%, -67.5%);
+  }
+}
