@@ -110,7 +110,7 @@ while ( have_posts() ) : the_post(); ?>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button"
                data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Prev</span>
             </a>
         </div>
     </div>
